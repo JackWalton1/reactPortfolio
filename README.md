@@ -14,8 +14,8 @@
 This application requires Node.js v18.17+.
 
 ```bash
-git clone https://github.com/leerob/leerob.io.git
-cd leerob.io
+git clone {this git repo}
+cd reactPortfolio
 bun install
 bun run setup # Remove all of my personal information
 bun dev
