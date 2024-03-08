@@ -10,7 +10,7 @@ export const metadata = {
 export default async function GuestbookPage() {
   let session = await auth();
   if (session?.user?.email !== 'me@reactPorfolio') {
-    redirect('/');
+    redirect('https://jackwalton.info/guestbook');
   }
 
   let entries = await getGuestbookEntries();
