@@ -8,16 +8,16 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 import { SandpackCSS } from './blog/[slug]/sandpack';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://leerob.io'),
+  metadataBase: new URL('https://jackwalton.info'),
   title: {
     default: 'Jack Walton',
     template: '%s | Jack Walton',
   },
-  description: 'Developer, writer, and creator.',
+  description: 'Developer, problem solver, and creator.',
   openGraph: {
     title: 'Jack Walton',
-    description: 'Developer, writer, and creator.',
-    url: 'https://leerob.io',
+    description: 'Developer, problem solver, and creator.',
+    url: 'https://jackwalton.info',
     siteName: 'Jack Walton',
     locale: 'en_US',
     type: 'website',
