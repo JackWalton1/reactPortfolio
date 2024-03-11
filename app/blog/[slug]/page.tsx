@@ -109,7 +109,7 @@ export default function Blog({ params }) {
             url: `https://jackwalton.info/blog/${post.slug}`,
             author: {
               '@type': 'Person',
-              name: 'Lee Robinson',
+              name: 'Jack Walton',
             },
           }),
         }}
