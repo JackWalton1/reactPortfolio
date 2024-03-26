@@ -52,10 +52,8 @@ function App() {
       <GridItem pl='1' area={'header'} fontWeight={400}>
         <br></br>
         <VStack>
-          <Container maxW='md' color='white'>
-          <p className="prose prose-neutral dark:prose-invert">
+          <Container maxW='md' className="prose prose-neutral dark:prose-invert">
             Welcome to my first full stack website! I am a Software Engineering major at Cal Poly, San Luis Obispo. I am interested in many aspects of computing. For example, I enjoy making full stack webapps like this one, creating embedded systems with microcontrollers, and solving complex technical problems.
-          </p>
           </Container>
           <Container maxW='md'  color='white'>
             <Grid templateColumns='repeat(3, 1fr)' gap={20} alignItems="center" >
@@ -70,10 +68,8 @@ function App() {
               </GridItem>
             </Grid>
           </Container>
-          <Container maxW='md' >
-            <p className="prose prose-neutral dark:prose-invert">
+          <Container maxW='md' className="prose prose-neutral dark:prose-invert">
               I pride myself in my ability to learn new technologies, recognize patterns, and problem solve in any context. I also can explain these complexities to a diverse group of individuals. These are the qualities that make me a great software engineer.
-            </p>
           </Container>
         </VStack>
       </GridItem>
