@@ -60,7 +60,7 @@ const deleteFolderRecursive = async (path) => {
   const contentDir = path.join(process.cwd(), 'content');
   // path.join(process.cwd(), 'posts');
   const appDir = path.join(process.cwd(), 'app');
-  const workDir = path.join(process.cwd(), 'app', 'work');
+  const workDir = path.join(process.cwd(), 'app', 'portfolio');
 
   await deleteFolderRecursive(contentDir);
   await fs.mkdir(contentDir);
