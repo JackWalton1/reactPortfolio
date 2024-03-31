@@ -7,41 +7,6 @@ import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { SandpackCSS } from './blog/[slug]/sandpack';
 
-export const metadata: Metadata = {
-  metadataBase: new URL('https://jackwalton.info'),
-  title: {
-    default: 'Jack Walton',
-    template: '%s | Jack Walton',
-  },
-  description: 'Developer, problem solver, and creator.',
-  openGraph: {
-    title: 'Jack Walton',
-    description: 'Developer, problem solver, and creator.',
-    url: 'https://jackwalton.info',
-    siteName: 'Jack Walton',
-    locale: 'en_US',
-    type: 'website',
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
-  },
-  twitter: {
-    title: 'Jack Walton',
-    card: 'summary_large_image',
-  },
-  verification: {
-    google: 'eZSdmzAXlLkKhNJzfgwDqWORghxnJ8qR9_CHdAh5-xw',
-    yandex: '14d2e73487fa6c71',
-  },
-};
 
 const cx = (...classes) => classes.filter(Boolean).join(' ');
 
