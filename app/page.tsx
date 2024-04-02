@@ -1,7 +1,6 @@
 import * as React from 'react';
 import dynamic from 'next/dynamic';
 
-const Button = dynamic(() => import('@mui/material/Button'), { ssr: false });
 const Grid = dynamic(() => import('@mui/material/Grid'), { ssr: false });
 const Avatar = dynamic(() => import('@mui/material/Avatar'), { ssr: false });
 
