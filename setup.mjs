@@ -50,7 +50,7 @@ const deleteFolderRecursive = async (path) => {
 (async () => {
   dotenv.config();
 
-  if (process.env.IS_TEMPLATE === 'false') {
+  if (process.env.IS_TEMPLATE == 'false') {
     // This means it's not the template, it's my legit site
     // I override the env variable for my site. This means that when
     // folks clone this repo for the first time, it will delete my personal content
