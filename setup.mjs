@@ -32,7 +32,7 @@ const itemData = [
     title: 'RFID Copier',
   },
   {
-    img: 'images/RomeClassroom.jpg',
+    img: 'images/romeClassroom.jpg',
     title: 'Study abroad in Rome',
   },
   {
