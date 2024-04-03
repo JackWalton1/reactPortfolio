@@ -28,7 +28,7 @@ let myPhoto: string = 'images/avatar.jpg';
 
 export default function Page() {
   return (
-    <Grid container spacing={2}>
+    <Grid container spacing={2} justifyContent="center">
 
       <Grid item xs={9} alignItems="left">
         <h1 className="text-left font-medium text-2xl mb-8 tracking-tighter">hey, I'm Jack Walton </h1>
@@ -129,7 +129,7 @@ const ActionCard = ({ url, avatarSrc, text }) => {
 function DisplayActionCards(){
   return(
     <Grid container spacing={2} alignItems="center" justifyContent="space-around">
-      <Grid item xs={6.1} md={5} alignItems="center" justifyContent="space-around">
+      <Grid item xs={10} sm={6} md={5} alignItems="center" justifyContent="space-around">
         <ActionCard 
           url="https://github.com/JackWalton1" 
           avatarSrc="https://avatars.githubusercontent.com/u/81585486?v=4"
@@ -137,7 +137,7 @@ function DisplayActionCards(){
         />
       </Grid>
 
-      <Grid item xs={6.1} md={5} alignItems="center" justifyContent="space-around">
+      <Grid item xs={10} sm={6} md={5} alignItems="center" justifyContent="space-around">
         <ActionCard 
           url="https://www.linkedin.com/in/thejackwalton/"      
           avatarSrc= "https://media.licdn.com/dms/image/D5635AQGnXJOIHCRG7g/profile-framedphoto-shrink_800_800/0/1709099403881?e=1712714400&v=beta&t=P-o-5itBT9NeKI4lgpOkRcXh7KGxH9fsHfgl1D9X1MM" 
