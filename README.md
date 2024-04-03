@@ -5,6 +5,7 @@
 - **Authentication**: [NextAuth.js](https://next-auth.js.org)
 - **Deployment**: [Vercel](https://vercel.com)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com)
+- **UI Component Library**: [Material UI](https://mui.com/material-ui)
 - **Analytics**: [Vercel Analytics](https://vercel.com/analytics)
 
 ## Running Locally
