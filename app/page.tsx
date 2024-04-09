@@ -1,6 +1,7 @@
 import * as React from 'react';
 import dynamic from 'next/dynamic';
 import { GeistSans } from 'geist/font/sans';
+// import { styled } from '@mui/material/styles';
 
 const Grid = dynamic(() => import('@mui/material/Grid'), { ssr: false });
 const Avatar = dynamic(() => import('@mui/material/Avatar'), { ssr: false });
