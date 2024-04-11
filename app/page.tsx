@@ -129,7 +129,7 @@ function DisplayActionCards(){
       <Grid item xs={10} sm={6} md={5} alignItems="center" justifyContent="space-around">
         <ActionCard 
           url="https://www.linkedin.com/in/thejackwalton/"      
-          avatarSrc= "https://media.licdn.com/dms/image/D5635AQGnXJOIHCRG7g/profile-framedphoto-shrink_800_800/0/1709099403881?e=1712714400&v=beta&t=P-o-5itBT9NeKI4lgpOkRcXh7KGxH9fsHfgl1D9X1MM" 
+          avatarSrc= "https://media.licdn.com/dms/image/D5635AQGnXJOIHCRG7g/profile-framedphoto-shrink_100_100/0/1709099403881?e=1713456000&v=beta&t=Jbu91pozSgzFPKfWJi9M_wzWNositmZBlqOirmL85zw" 
           text="LinkedIn"
         />
       </Grid>
