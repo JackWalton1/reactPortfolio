@@ -1,6 +1,8 @@
 import * as React from 'react';
 import dynamic from 'next/dynamic';
 import { GeistSans } from 'geist/font/sans';
+import HomePageContent from './components/homeContent';
+
 // import { styled } from '@mui/material/styles';
 
 const Grid = dynamic(() => import('@mui/material/Grid'), { ssr: false });
@@ -13,41 +15,9 @@ const CardActionArea = dynamic(() => import('@mui/material/CardActionArea'), { s
 const Typography = dynamic(() => import('@mui/material/Typography'), { ssr: false });
 const Box = dynamic(() => import('@mui/material/Box'), { ssr: false });
 
-let myPhoto: string = 'images/avatar.jpg';
-
 export default function Page() {
   return (
-    <Grid container spacing={2} justifyContent="center">
-
-      <Grid item xs={9} alignItems="left">
-        <h1 className="text-left font-medium text-2xl mb-8 tracking-tighter">hey, I'm Jack Walton </h1>
-      </Grid>
-
-      <Grid item xs={3} alignItems="right">
-        <Avatar src={myPhoto} alt="Jack Walton"  sx={{ width: 75, height: 75 }}/>
-      </Grid>
-
-      <Grid item xs={12} >
-        <p className="prose prose-neutral dark:prose-invert">
-        Welcome to my first full stack website! I am a Software Engineering major at Cal Poly, San Luis Obispo. I am interested in many aspects of computing. For example, I enjoy making full stack webapps like this one, creating embedded systems with microcontrollers, and solving complex technical problems in general.
-        </p>
-      </Grid>
-
-      <Grid item xs={12} >
-        <DisplayImages/>
-      </Grid>
-
-      <Grid item xs={12} >
-        <p className="prose prose-neutral dark:prose-invert">
-        I pride myself in my ability to learn new technologies, recognize patterns, and problem solve in any context. I also can explain these complexities to a diverse group of individuals. These are the qualities that make me a great software engineer.
-        </p>
-      </Grid>
-
-      <Grid item xs={12} justifyContent="center">
-        <DisplayActionCards/>
-      </Grid>
-
-    </Grid>
+    <HomePageContent></HomePageContent>
   );
 }
 

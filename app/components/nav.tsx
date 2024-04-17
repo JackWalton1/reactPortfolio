@@ -1,4 +1,8 @@
 import Link from 'next/link';
+import Avatar from '@mui/material/Avatar';
+
+let myPhoto: string = 'images/avatar.jpg';
+
 
 const navItems = {
   '/': {
@@ -40,6 +44,7 @@ export function Navbar() {
             })}
           </div>
         </nav>
+
       </div>
     </aside>
   );
