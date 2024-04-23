@@ -96,7 +96,7 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
 }));
 
 export default function CustomizedAccordions() {
-  const [expanded, setExpanded] = React.useState<string | false>('panel1');
+  const [expanded, setExpanded] = React.useState<string | false>('panel');
 
   const handleChange = (panel: string) => (event: React.SyntheticEvent, newExpanded: boolean) => {
     setExpanded(newExpanded ? panel : false);
@@ -210,9 +210,9 @@ export default function CustomizedAccordions() {
       <Accordion expanded={expanded === 'panel5'} onChange={handleChange('panel5')}>
         <AccordionSummary aria-controls="panel5d-content" id="panel5d-header">
         <Typography className="font-medium text-xl mb-1 tracking-tighter" sx={{ width: '30%', flexShrink: 0 }}>
-          <strong> Java Calculator App
+          <strong> Calculator App
         </strong></Typography>
-          <Typography className="prose prose-neutral dark:prose-invert">Calculator with LRU Cache, Name Bindings and GUI</Typography>
+          <Typography className="prose prose-neutral dark:prose-invert">Java Calculator with LRU Cache, Name Bindings and GUI</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography><strong>
@@ -260,7 +260,7 @@ export default function CustomizedAccordions() {
       <Accordion expanded={expanded === 'panel6'} onChange={handleChange('panel6')}>
         <AccordionSummary aria-controls="panel6d-content" id="panel6d-header">
         <Typography className="font-medium text-xl mb-1 tracking-tighter" sx={{ width: '30%', flexShrink: 0 }}>
-          <strong> A* Pathfinding Strategy
+          <strong> A* Pathing Strategy
         </strong></Typography>
           <Typography className="prose prose-neutral dark:prose-invert">Implementing A* Algorithm for Moving Entities</Typography>
         </AccordionSummary>
@@ -290,7 +290,7 @@ export default function CustomizedAccordions() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography className="prose prose-neutral dark:prose-invert">
-          Explore the world of system programming with "findstuff," a specialized file search utility designed exclusively for Unix/Linux. With findstuff, users gain a powerful tool for swiftly locating files and conducting targeted text searches within directories and subdirectories, streamlining file management tasks with ease.          
+          With my desire to learn about system programming, I decided to make the "findstuff" CLI tool, a specialized file search utility designed exclusively for Unix/Linux. With findstuff, users gain a powerful tool for swiftly locating files and conducting targeted text searches within directories and subdirectories, streamlining file management tasks with ease.          
           </Typography>
           <br/>
           <Typography><strong>

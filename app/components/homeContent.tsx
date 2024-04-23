@@ -13,6 +13,7 @@ import Box from '@mui/material/Box';
 
 
 let myPhoto: string = 'images/avatar.jpg';
+let myLIPhoto: string = 'images/li_pfp.jpeg';
 
 
 
@@ -133,7 +134,7 @@ const itemData = [
         <Grid item xs={10} sm={6} md={5} alignItems="center" justifyContent="space-around">
           <ActionCard 
             url="https://www.linkedin.com/in/thejackwalton/"      
-            avatarSrc= "https://media.licdn.com/dms/image/D5635AQGnXJOIHCRG7g/profile-framedphoto-shrink_100_100/0/1709099403881?e=1713456000&v=beta&t=Jbu91pozSgzFPKfWJi9M_wzWNositmZBlqOirmL85zw" 
+            avatarSrc= {myLIPhoto}
             text="LinkedIn"
           />
         </Grid>
