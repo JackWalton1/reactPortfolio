@@ -42,7 +42,7 @@ export default function HomePageContent() {
 
 <Grid item xs={12} >
   <p className="prose prose-neutral dark:prose-invert">
-  I pride myself in my ability to learn new technologies, recognize patterns, and problem solve in any context. I also can explain these complexities to a diverse group of individuals. These are the qualities that I take pride in as a software engineer.
+  I believe my diverse background in tech has allowed me to learn new technologies quickly, recognize patterns, and problem solve in any context. I also can explain these complexities to a diverse group of individuals. These are the qualities that I take pride in as a software engineer.
   </p>
 </Grid>
 
