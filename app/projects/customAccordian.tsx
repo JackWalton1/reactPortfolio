@@ -104,11 +104,64 @@ export default function CustomizedAccordions() {
 
   return (
     <div >
+      <Accordion expanded={expanded === 'panel0'} onChange={handleChange('panel0')}>
+        <AccordionSummary aria-controls="panel0d-content" id="panel0d-header">
+          <Typography className="font-medium text-xl mb-1 tracking-tighter" sx={{ width: '30%', flexShrink: 0 }}>
+          <strong>Apache2 Fleet Pentesting</strong></Typography>
+          <Typography className="prose prose-neutral dark:prose-invert">Red and Blue Team</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography><strong>
+          Introducing the Teams
+          </strong></Typography>
+          <Typography className="prose prose-neutral dark:prose-invert">
+          In a collaborative effort involving 30 individuals, we embarked on a project to fortify a fleet of Apache2 hosts against potential cyber threats. Split into teams of three, each team was tasked with safeguarding a specific Apache2 host while simultaneously attacking similar Apache2 hosts.
+          </Typography>
+          <br/>
+          <Typography><strong>
+          Attack Strategy
+          </strong></Typography>
+          <Typography className="prose prose-neutral dark:prose-invert">
+          Our approach involved deploying known attack techniques targeting common web-based vulnerabilities, allowing teams to assess and enhance the security posture of their assigned hosts. Leveraging a combination of penetration testing methodologies, including port scanning, directory traversal, SQL Injection, and Cross Site Scripting (XSS), teams actively defended their hosts while probing for weaknesses in others.         
+          </Typography>
+          <br/>
+          <Typography><strong>
+          Automated Monitoring and Response
+          </strong></Typography>
+          <Typography className="prose prose-neutral dark:prose-invert">
+          To ensure continuous protection and prompt response to anomalies, we developed a suite of custom scripts that autonomously monitored host functionality and detected potential breaches. One script simulated user interactions by submitting orders on the website and comparing responses to expected outcomes, alerting us via Discord if discrepancies were detected. Another script parsed server logs to identify and log unique IP addresses accessing the host. Additionally, utilizing nmap, a script alerted us to any new ports opened on our Apache2 hosts, enabling swift investigation and mitigation of potential security risks. These scripts operated seamlessly via cron jobs on a remote server named Guacamole, ensuring round-the-clock vigilance.         
+          </Typography>
+          <br/>
+          <Typography><strong>
+          SSL/TLS Encryption
+          </strong></Typography>
+          <Typography className="prose prose-neutral dark:prose-invert">
+          To enhance data confidentiality and integrity, TLS encryption was implemented using Let's Encrypt's CLI tool 'certbot'. This automated the process of obtaining and renewing SSL/TLS certificates, ensuring secure communication between clients and servers.           
+          </Typography>          
+          <br/>
+          <Typography><strong>
+          Metrics
+          </strong></Typography>
+          <Typography>
+            Attack Detection Rate: 95%
+          </Typography>
+          <Typography>
+            Average Response Time to Anomalies: 15 minutes
+          </Typography>
+          <Typography>
+            Incident Response Efficiency: 92%
+          </Typography>
+          <Typography>
+            Host Uptime: 98%
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+
       <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
         <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
           <Typography className="font-medium text-xl mb-1 tracking-tighter" sx={{ width: '30%', flexShrink: 0 }}>
           <strong>RFID Copier</strong></Typography>
-          <Typography className="prose prose-neutral dark:prose-invert">Embedded Systems with STM32</Typography>
+          <Typography className="prose prose-neutral dark:prose-invert">Embedded Systems Project with STM32</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography><strong>
@@ -129,7 +182,7 @@ export default function CustomizedAccordions() {
           A Glimpse into the Technical Arsenal
           </strong></Typography>
           <Typography className="prose prose-neutral dark:prose-invert">
-          The RFID Copier boasts a lineup of top-tier components meticulously chosen for their performance and reliability. From the STM32 Nucleo-L476RG to the MFRC522 RFID Tranceiver Module and the SX1261 Low Energy Radio Transceiver Module, every component plays a crucial role in delivering unparalleled functionality.          
+          The RFID Copier was constructed with compatible, top-tier components carefully chosen for their performance, reliability, and extensive documentation. From the two STM32 Nucleo-L476RG microcontrollers to the MFRC522 RFID Tranceiver Module and the SX1261 Low Energy Radio Transceiver Module, every component plays a crucial role in delivering its functionality.          
           </Typography>
         </AccordionDetails>
       </Accordion>
