@@ -13,7 +13,7 @@ interface AccordionPanel {
   summary: string;
   details: {
     heading: string;
-    content: string;
+    content: React.ReactNode;
   }[];
 }
 
