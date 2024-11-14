@@ -71,7 +71,7 @@ const panels: AccordionPanel[] = [
   },
   {
     id: 'panel4',
-    title: 'Goal - Cross platform webapp',
+    title: 'Goal - Cross Platform Webapp',
     summary: 'Learned .NET Maui, C#, Azure, and MongoDB',
     details: [
       { heading: 'Crafting a Multi-Platform Application', content: 'Dive into the realm of sports exploration with our innovative application, designed to keep users informed about forthcoming sports events in their vicinity. Co-created with three other developers, while we studied abroad in the enchanting city of Rome, Italy. Our project harnesses the power of cutting-edge technologies like .NET Maui, C#, Azure, and MongoDB. Leveraging the versatility of .NET Maui, we meticulously crafted a user-friendly front-end interface that seamlessly adapts to the nuances of iOS, Android, MacOS, Windows, and even web browsers. Whether accessing the application on a smartphone, tablet, or desktop, users are greeted with a consistent and intuitive interface that informs the user about upcoming sports events in their area.' },
@@ -178,7 +178,7 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
 }));
 
 export default function CustomizedAccordions() {
-  const [expanded, setExpanded] = React.useState<string | false>('panel0');
+  const [expanded, setExpanded] = React.useState<string | false>(false);
 
   const handleChange = (panel: string) => (event: React.SyntheticEvent, newExpanded: boolean) => {
     setExpanded(newExpanded ? panel : false);

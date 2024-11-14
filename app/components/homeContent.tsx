@@ -32,7 +32,7 @@ export default function HomePageContent() {
 
 <Grid item xs={12} >
   <p className="prose prose-neutral dark:prose-invert">
-  Welcome to my first full stack website written with React, Next.js, TailwindCSS, and PostgreSQL! I am a Software Engineering major at Cal Poly, San Luis Obispo, graduating June 2024. I am interested in many aspects of computing. For example, I enjoy making full stack webapps like this one, creating embedded systems with microcontrollers, and solving complex technical problems in general.
+  Welcome to my first full stack website written with React, Next.js, TailwindCSS, and PostgreSQL! I am a Software Engineering alumni from Cal Poly, San Luis Obispo. I graduated June 2024 with honors Magna Cum Laude. I am interested in many aspects of computing. For example, I enjoy making full stack webapps like this one, creating embedded systems with microcontrollers, and solving complex technical problems in general.
   </p>
 </Grid>
 
@@ -42,7 +42,7 @@ export default function HomePageContent() {
 
 <Grid item xs={12} >
   <p className="prose prose-neutral dark:prose-invert">
-  I believe my diverse background in tech has allowed me to learn new technologies quickly, recognize patterns, and problem solve in any context. I also can explain these complexities to a diverse group of individuals. These are the qualities that I take pride in as a software engineer.
+  I believe my diverse background in tech has allowed me to learn new technologies quickly, recognize patterns, and problem solve in any context. I also can explain these complexities to a diverse group of individuals. These are the qualities that I take pride in as a software engineer with a strong foundation in DevOps and security.
   </p>
 </Grid>
 
