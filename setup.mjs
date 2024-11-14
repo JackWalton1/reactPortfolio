@@ -56,15 +56,5 @@ const deleteFolderRecursive = async (path) => {
     // folks clone this repo for the first time, it will delete my personal content
     return;
   }
-
-  const contentDir = path.join(process.cwd(), 'content');
-  // path.join(process.cwd(), 'posts');
-  const appDir = path.join(process.cwd(), 'app');
-  const workDir = path.join(process.cwd(), 'app', 'work');
-
-  await deleteFolderRecursive(contentDir);
-  await fs.mkdir(contentDir);
-  await fs.writeFile(path.join(contentDir, 'hello-world.mdx'), template);
-  await fs.writeFile(path.join(appDir, 'page.tsx'), homePage);
-  await fs.writeFile(path.join(workDir, 'page.tsx'), workPage);
+  console.log(process.env.IS_TEMPLATE)
 })();
